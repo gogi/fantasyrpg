@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-            echo "Gogi to małpa!";
+            echo "Gogi to stara małpa!";
         ?>
     </body>
 </html>
