@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-            echo "Gogi to małpa2!";
+            echo "Gogi to małpa3!";
             echo "Stara dupa";
             for ($index = 0; $index < 10; $index++) {
                 echo $index;
