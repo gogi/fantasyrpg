@@ -1,1 +1,1 @@
-jem zupę
+zmiana
