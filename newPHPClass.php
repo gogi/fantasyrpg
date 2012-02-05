@@ -11,7 +11,7 @@
  * @author Kuba
  */
 class newPHPClass {
-    //put your code here2222
+    //put your code here22223
 }
 
 ?>
