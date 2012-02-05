@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularz</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="Stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="walidacja.js"></script>
+    </head>
+    <body>
+        <form>
+        <table>
+		<tr><td>
+			Nazwa:<br />
+                        <input type="text" name="nazwa" onchange="nazwaCzaru(this)" />
+		</td></tr>
+		<tr><td>
+			Szkoła:<br />
+			<select name="szkola">
+				<option>Iluzje</option>
+				<option>Nekromancja</option>
+				<option>Oczarowanie</option>
+				<option>Odrzucanie</option>
+				<option>Poznanie</option>
+				<option>Przemiany</option>
+				<option>Przywoływanie</option>
+				<option>Wywoływanie</option>
+			</select>
+		</td></tr>
+		<tr><td>
+			Podszkoła:<br />
+			<select name="podszkola">
+				<option>Cień</option>
+				<option>Leczenie</option>
+				<option>Przymus</option>
+				<option>Przyzywanie</option>
+				<option>Sprowadzanie</option>
+				<option>Szpiegowanie</option>
+				<option>Teleportacja</option>
+				<option>Tworzenie</option>
+				<option>Ułuda</option>
+				<option>Wzorzec</option>
+				<option>Zauroczenie</option>
+				<option>Złudzenie</option>
+				<option>Zwid</option>
+			</select>
+		</td></tr>
+		<tr><td>
+			Określnik*:<br />
+			<select name="okreslnik" multiple="multiple" size="19">
+				<option>Chaos</option>
+				<option>Ciemność</option>
+				<option>Dobro</option>
+				<option>Dźwięk</option>
+				<option>Elektryczność</option>
+				<option>Kwas</option>
+				<option>Moc</option>
+				<option>Ogień</option>
+				<option>Oparty na języku</option>
+				<option>Powietrze</option>
+				<option>Praworządność</option>
+				<option>Śmierć</option>
+				<option>Strach</option>
+				<option>Światło</option>
+				<option>Woda</option>
+				<option>Wpływający na umysł</option>
+				<option>Ziemia</option>
+				<option>Zimno</option>
+				<option>Zło</option>
+			</select><br />
+			*kilka opcji jednocześnie z wciśniętym Ctrl
+		</td></tr>
+		<tr><td>
+			Klasa*:<br />
+                        <select name="klasa" multiple="multiple" size="6" onchange="klasyPostaci(this)">
+				<option>Brd</option>
+				<option>Cza/Zak</option>
+				<option>Drd</option>
+				<option>Kap</option>
+				<option>Pal</option>
+				<option>Trp</option>
+			</select><br />
+                        *kilka opcji jednocześnie z wciśniętym Ctrl
+		</td></tr>
+		<tr><td>
+			Poziom:<br />
+			<input type="radio" name="poziom" value="wartość" checked="checked" />1<br />
+			<input type="radio" name="poziom" value="wartość" />2<br />
+			<input type="radio" name="poziom" value="wartość" />3<br />
+			<input type="radio" name="poziom" value="wartość" />4<br />
+			<input type="radio" name="poziom" value="wartość" />5<br />
+			<input type="radio" name="poziom" value="wartość" />6<br />
+			<input type="radio" name="poziom" value="wartość" />7<br />
+			<input type="radio" name="poziom" value="wartość" />8<br />
+			<input type="radio" name="poziom" value="wartość" />9
+		</td></tr>
+		<tr><td>
+			Komponenty:<br />
+			<input type="checkbox" name="komponenty" value="wartość" />W<br />
+			<input type="checkbox" name="komponenty" value="wartość" />S<br />
+			<input type="checkbox" name="komponenty" value="wartość" />M<br />
+			<input type="checkbox" name="komponenty" value="wartość" />K<br />
+			<input type="checkbox" name="komponenty" value="wartość" />KO<br />
+			<input type="checkbox" name="komponenty" value="wartość" />KO<br />
+			<input type="checkbox" name="komponenty" value="wartość" />PD
+		</td></tr>
+		<tr><td>
+			Komponent materialny:<br />
+			<input type="text" name="komponenty" />
+		</td></tr>
+		<tr><td>
+			Wartość komponentów:<br />
+			<input type="text" name="kwartosc" value="Kuba to małpa"/>
+		</td></tr>
+		<tr><td>
+			Koszt w PD:<br />
+			<input type="text" name="kpd" value="masz farfocla w mózgu"/>
+		</td></tr>
+		<tr><td>
+			Czas rzucania:<br />
+			<input type="text" name="czas_rzucania" value="1 akcja"/>
+		</td></tr>
+		<tr><td>
+			Zasięg:<br />
+			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Osobisty<br />
+			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Dotykowy<br />
+			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Bliski<br />
+			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" checked="checked" />Średni<br />
+			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Daleki<br />
+			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Nieskończony<br />
+                        <input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Brak<br />
+                        <input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" id="metry_radio"/>W metrach
+                        
+		<tr><td>
+			Zasięg w metrach:<br />
+			<input type="text" name="zasieg_metry" id="metry_input" />
+		</td></tr>
+		<tr><td>
+			Cel:<br />
+			<input type="text" name="cel" value="uro"/>
+		</td></tr>
+		<tr><td>
+			Czas Działania:<br />
+			<input type="text" name="czas_dzialania" />
+		</td></tr>
+		<tr><td>
+			Rzut obronny:<br />
+			<input type="text" name="rzut_obronny"/>
+		</td></tr>
+		<tr><td>
+			Odporność na czary:<br />
+			<input type="radio" name="oc" value="wartość" checked="checked" />Tak
+			<input type="radio" name="oc" value="wartość" />Nie
+		</td></tr>
+		<tr><td>
+			Opis:<br />
+			<textarea name="opis" cols="40" rows="15" wrap="soft">Opis czaru</textarea>
+		</td></tr>
+		<tr><td>
+		<input type="submit" value="WYŚLIJ" />
+		</td></tr>
+	
+    </table>
+    </form>
+    </body>
+</html>
