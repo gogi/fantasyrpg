@@ -1,1 +1,1 @@
-kitek ma dużą dupę
+jem zupę
