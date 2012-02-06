@@ -8,7 +8,7 @@
     </head>
     <body>
         <form>
-        <table>
+        <table border="1">
 		<tr><td>
 			Nazwa:<br />
                         <input type="text" name="nazwa" onchange="nazwaCzaru(this)" />
@@ -46,7 +46,7 @@
 		</td></tr>
 		<tr><td>
 			Określnik*:<br />
-			<select name="okreslnik" multiple="multiple" size="19">
+			<select name="okreslnik" multiple="multiple" size="19" >
 				<option>Chaos</option>
 				<option>Ciemność</option>
 				<option>Dobro</option>
@@ -94,6 +94,7 @@
 			<input type="radio" name="poziom" value="wartość" />9
 		</td></tr>
 		<tr><td>
+                        <table><tr><td class="do_lewej">
 			Komponenty:<br />
 			<input type="checkbox" name="komponenty" value="wartość" />W<br />
 			<input type="checkbox" name="komponenty" value="wartość" />S<br />
@@ -102,6 +103,7 @@
 			<input type="checkbox" name="komponenty" value="wartość" />KO<br />
 			<input type="checkbox" name="komponenty" value="wartość" />KO<br />
 			<input type="checkbox" name="komponenty" value="wartość" />PD
+                        </td></tr></table>
 		</td></tr>
 		<tr><td>
 			Komponent materialny:<br />
@@ -109,17 +111,18 @@
 		</td></tr>
 		<tr><td>
 			Wartość komponentów:<br />
-			<input type="text" name="kwartosc" value="Kuba to małpa"/>
+			<input type="text" name="kwartosc" />
 		</td></tr>
 		<tr><td>
 			Koszt w PD:<br />
-			<input type="text" name="kpd" value="masz farfocla w mózgu"/>
+			<input type="text" name="kpd" />
 		</td></tr>
 		<tr><td>
 			Czas rzucania:<br />
 			<input type="text" name="czas_rzucania" value="1 akcja"/>
 		</td></tr>
 		<tr><td>
+                        <table><tr><td class="do_lewej">
 			Zasięg:<br />
 			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Osobisty<br />
 			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Dotykowy<br />
@@ -129,14 +132,14 @@
 			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Nieskończony<br />
                         <input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Brak<br />
                         <input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" id="metry_radio"/>W metrach
-                        
+                        </td></tr></table>
 		<tr><td>
 			Zasięg w metrach:<br />
 			<input type="text" name="zasieg_metry" id="metry_input" />
 		</td></tr>
 		<tr><td>
 			Cel:<br />
-			<input type="text" name="cel" value="uro"/>
+			<input type="text" name="cel" />
 		</td></tr>
 		<tr><td>
 			Czas Działania:<br />
@@ -153,10 +156,11 @@
 		</td></tr>
 		<tr><td>
 			Opis:<br />
-			<textarea name="opis" cols="40" rows="15" wrap="soft">Opis czaru</textarea>
+			<textarea name="opis" cols="60" rows="15" wrap="soft">Opis czaru</textarea>
 		</td></tr>
 		<tr><td>
-		<input type="submit" value="WYŚLIJ" />
+		<input type="submit" value="WYŚLIJ" /><br />
+                <span style="font-size: x-small">&copy; Gogi</span>
 		</td></tr>
 	
     </table>

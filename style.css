@@ -7,6 +7,28 @@
 */
 
 body { 
-    background-color: yellowgreen;
+    background-image: url(paper.jpg);
+    text-shadow: 0 0 20px red;
+    }
+table {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: yellow;
 }
-
+td {
+    text-align: center;
+    border-width: 2px;
+}
+input, select, textarea {
+    background-image: url(paper.jpg);
+}
+.do_lewej {
+    text-align: left;
+    margin-left: 140px;
+}
+textarea {
+    box-shadow: inset 5px 5px 30px #FFCC66;
+}
